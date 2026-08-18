@@ -1,0 +1,58 @@
+.field-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.field-input--error {
+  border-color: var(--color-danger);
+}
+
+.field-input--error:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.field-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.field-select {
+  cursor: pointer;
+}
+
+.field-checkbox,
+.field-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.field-checkbox input,
+.field-radio input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.field-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
